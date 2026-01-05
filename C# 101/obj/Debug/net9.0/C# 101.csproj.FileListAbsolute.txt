@@ -1,0 +1,14 @@
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/bin/Debug/net9.0/C# 101
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/bin/Debug/net9.0/C# 101.deps.json
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/bin/Debug/net9.0/C# 101.runtimeconfig.json
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/bin/Debug/net9.0/C# 101.dll
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/bin/Debug/net9.0/C# 101.pdb
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.AssemblyInfoInputs.cache
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.AssemblyInfo.cs
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.csproj.CoreCompileInputs.cache
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.dll
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/refint/C# 101.dll
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.pdb
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/C# 101.genruntimeconfig.cache
+/Users/benchoi/Desktop/한동대 외/멋쟁이사자 유니티 부트캠프/C# 101/obj/Debug/net9.0/ref/C# 101.dll
