@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;  
 using System.Threading.Tasks;
 
@@ -164,14 +165,162 @@ namespace ConsoleApp
             // Console.WriteLine($"위험 상태: {isHealthDanger}");
 
 
-            int number = 123;
-            string numberAsString = number.ToString(); //정수를 문자열로 변환
+            // int number = 123;
+            // string numberAsString = number.ToString(); //정수를 문자열로 변환
 
-            bool flag = true;
-            string flagAsString = flag.ToString(); //논리값을 문자열로 변화
+            // bool flag = true;
+            // string flagAsString = flag.ToString(); //논리값을 문자열로 변화
 
-            Console.WriteLine(numberAsString); //"123"
-            Console.WriteLine(flagAsString); //"true"
+            // Console.WriteLine(numberAsString); //"123"
+            // Console.WriteLine(flagAsString); //"true"
+
+
+            const string block = "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■";
+
+            Console.Clear();
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine($"{block}");
+            Thread.Sleep(200);
+            
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME START  │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("            ┌──────────────┐");
+            Console.WriteLine("            │  GAME QUIT   │");
+            Console.WriteLine("            └──────────────┘");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Thread.Sleep(200);
 
         }
     }
