@@ -464,38 +464,46 @@ namespace ConsoleApp9
             int currentEnchantLevel = 0;
 
             int enchantmentToken = 15;
-            int enchantmentSuccessChance = 3; // 30%
+            double enchantmentSuccessChance = 0.5; // 30%
             int maxEnchant = 3;
 
             Random rand = new();
-            int rngOutcome;
 
-            for (int i = 0; i < enchantmentToken; i++)  // try until token runs out
+            for (int i = 0; i < enchantmentToken; i++)
             {
-                rngOutcome = rand.Next(1, 11);          // take rng from 1~10
                 Console.WriteLine("Enchanting...");
                 Thread.Sleep(2000);
-                if (rngOutcome <= enchantmentSuccessChance) // if (30% chance)
+
+                double rngOutcome = rand.NextDouble(); // 0.0 ~ 1.0
+
+                if (rngOutcome <= enchantmentSuccessChance)
                 {
-                    currentEnchantLevel++;                  // enchant success
-                    if (currentEnchantLevel == maxEnchant)  // if max enchant level +3
+                    currentEnchantLevel++;
+
+                    if (currentEnchantLevel == maxEnchant)
                     {
-                        Console.WriteLine($"Amazing! your \"{weaponName}\" is now max level +{maxEnchant}");
-                        break;  // break;
+                        Console.WriteLine(
+                            $"Amazing! your \"{weaponName}\" is now max level +{maxEnchant}");
+                        break;
                     }
-                    Console.WriteLine($"Congratulations! your \"{weaponName}\" is now enchanted to +{currentEnchantLevel}");    // +1, +2 case
+
+                    Console.WriteLine(
+                        $"Congratulations! your \"{weaponName}\" is now enchanted to +{currentEnchantLevel}");
                 }
-                else    // failed attempt
+                else
                 {
-                    currentEnchantLevel = 0;    // back to +0
-                    Console.WriteLine($"Better luck next time! your \"{weaponName}\" is now back to +{currentEnchantLevel}");
+                    if (currentEnchantLevel > 0)
+                        currentEnchantLevel--;
+
+                    Console.WriteLine(
+                        $"Better luck next time! your \"{weaponName}\" is now +{currentEnchantLevel}");
                 }
 
-                enchantmentToken--;     // anyways, take away 1 token
-
-                Console.WriteLine($"Remaining Token: {enchantmentToken}\n");
+                Console.WriteLine(
+                    $"Remaining Token: {enchantmentToken - i - 1}\n");
                 Thread.Sleep(2000);
             }
+
 
 
         }
