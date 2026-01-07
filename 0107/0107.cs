@@ -408,28 +408,28 @@ namespace ConsoleApp9
             // }
 
 
-            // Assignment 1: Clothing Recommendation based on Temperature
-            Console.Write("Input temperature: ");
-            int temp = int.Parse(Console.ReadLine()!);
+            // // Assignment 1: Clothing Recommendation based on Temperature
+            // Console.Write("Input temperature: ");
+            // int temp = int.Parse(Console.ReadLine()!);
 
-            Console.WriteLine($"Current Temperature is {temp} C!");
+            // Console.WriteLine($"Current Temperature is {temp} C!");
 
-            if (temp >= 30)
-            {
-                Console.WriteLine("Too hot! Wear a T-shirt and a pair of shorts.");
-            }
-            else if (temp >= 20)
-            {
-                Console.WriteLine("Just right! Wear a long-sleeve shirt.");
-            }
-            else if (temp >= 10)
-            {
-                Console.WriteLine("Chilly! Wear a cardigan or a jacket.");
-            }
-            else if (temp >= 0)
-            {
-                Console.WriteLine("Cold! Please wear paddings and a muffler!");
-            }
+            // if (temp >= 30)
+            // {
+            //     Console.WriteLine("Too hot! Wear a T-shirt and a pair of shorts.");
+            // }
+            // else if (temp >= 20)
+            // {
+            //     Console.WriteLine("Just right! Wear a long-sleeve shirt.");
+            // }
+            // else if (temp >= 10)
+            // {
+            //     Console.WriteLine("Chilly! Wear a cardigan or a jacket.");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Cold! Please wear paddings and a muffler!");
+            // }
 
             // // Assignment 2: Choosing a Class of Game Character
             // Console.Write("Choose a class (1:Warrior, 2:Mage, 3:Archer, 4:Thief): ");
@@ -455,6 +455,47 @@ namespace ConsoleApp9
             //         Console.WriteLine("Wrong input. Choose from 1 ~ 4");
             //         break;
             // }
+
+
+            // sword enchatment exercise
+            // system: consume 1 token per attempt, 30% to enchant +1, max +3, if fail then back to +0
+
+            string weaponName = "Rocket Hammer";
+            int currentEnchantLevel = 0;
+
+            int enchantmentToken = 15;
+            int enchantmentSuccessChance = 3; // 30%
+            int maxEnchant = 3;
+
+            Random rand = new();
+            int rngOutcome;
+
+            for (int i = 0; i < enchantmentToken; i++)  // try until token runs out
+            {
+                rngOutcome = rand.Next(1, 11);          // take rng from 1~10
+                Console.WriteLine("Enchanting...");
+                Thread.Sleep(2000);
+                if (rngOutcome <= enchantmentSuccessChance) // if (30% chance)
+                {
+                    currentEnchantLevel++;                  // enchant success
+                    if (currentEnchantLevel == maxEnchant)  // if max enchant level +3
+                    {
+                        Console.WriteLine($"Amazing! your \"{weaponName}\" is now max level +{maxEnchant}");
+                        break;  // break;
+                    }
+                    Console.WriteLine($"Congratulations! your \"{weaponName}\" is now enchanted to +{currentEnchantLevel}");    // +1, +2 case
+                }
+                else    // failed attempt
+                {
+                    currentEnchantLevel = 0;    // back to +0
+                    Console.WriteLine($"Better luck next time! your \"{weaponName}\" is now back to +{currentEnchantLevel}");
+                }
+
+                enchantmentToken--;     // anyways, take away 1 token
+
+                Console.WriteLine($"Remaining Token: {enchantmentToken}\n");
+                Thread.Sleep(2000);
+            }
 
 
         }
