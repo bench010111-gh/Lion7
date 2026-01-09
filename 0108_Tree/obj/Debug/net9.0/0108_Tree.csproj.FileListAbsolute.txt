@@ -1,0 +1,15 @@
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/bin/Debug/net9.0/0108_Tree
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/bin/Debug/net9.0/0108_Tree.deps.json
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/bin/Debug/net9.0/0108_Tree.runtimeconfig.json
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/bin/Debug/net9.0/0108_Tree.dll
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/bin/Debug/net9.0/0108_Tree.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.sourcelink.json
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.dll
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/refint/0108_Tree.dll
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/0108_Tree.genruntimeconfig.cache
+/Users/benchoi/Documents/GitHub/Lion7/0108_Tree/obj/Debug/net9.0/ref/0108_Tree.dll

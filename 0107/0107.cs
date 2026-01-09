@@ -460,49 +460,49 @@ namespace ConsoleApp9
             // sword enchatment exercise
             // system: consume 1 token per attempt, 30% to enchant +1, max +3, if fail then back to +0
 
-            string weaponName = "Rocket Hammer";
-            int currentEnchantLevel = 0;
+            // string weaponName = "Rocket Hammer";
+            // int currentEnchantLevel = 0;
 
-            int enchantmentToken = 15;
-            double enchantmentSuccessChance = 0.5; // 30%
-            int maxEnchant = 3;
+            // int enchantmentToken = 15;
+            // double enchantmentSuccessChance = 0.5; // 30%
+            // int maxEnchant = 3;
 
-            Random rand = new();
+            // Random rand = new();
 
-            for (int i = 0; i < enchantmentToken; i++)
-            {
-                Console.WriteLine("Enchanting...");
-                Thread.Sleep(2000);
+            // for (int i = 0; i < enchantmentToken; i++)
+            // {
+            //     Console.WriteLine("Enchanting...");
+            //     Thread.Sleep(2000);
 
-                double rngOutcome = rand.NextDouble(); // 0.0 ~ 1.0
+            //     double rngOutcome = rand.NextDouble(); // 0.0 ~ 1.0
 
-                if (rngOutcome <= enchantmentSuccessChance)
-                {
-                    currentEnchantLevel++;
+            //     if (rngOutcome <= enchantmentSuccessChance)
+            //     {
+            //         currentEnchantLevel++;
 
-                    if (currentEnchantLevel == maxEnchant)
-                    {
-                        Console.WriteLine(
-                            $"Amazing! your \"{weaponName}\" is now max level +{maxEnchant}");
-                        break;
-                    }
+            //         if (currentEnchantLevel == maxEnchant)
+            //         {
+            //             Console.WriteLine(
+            //                 $"Amazing! your \"{weaponName}\" is now max level +{maxEnchant}");
+            //             break;
+            //         }
 
-                    Console.WriteLine(
-                        $"Congratulations! your \"{weaponName}\" is now enchanted to +{currentEnchantLevel}");
-                }
-                else
-                {
-                    if (currentEnchantLevel > 0)
-                        currentEnchantLevel--;
+            //         Console.WriteLine(
+            //             $"Congratulations! your \"{weaponName}\" is now enchanted to +{currentEnchantLevel}");
+            //     }
+            //     else
+            //     {
+            //         if (currentEnchantLevel > 0)
+            //             currentEnchantLevel--;
 
-                    Console.WriteLine(
-                        $"Better luck next time! your \"{weaponName}\" is now +{currentEnchantLevel}");
-                }
+            //         Console.WriteLine(
+            //             $"Better luck next time! your \"{weaponName}\" is now +{currentEnchantLevel}");
+            //     }
 
-                Console.WriteLine(
-                    $"Remaining Token: {enchantmentToken - i - 1}\n");
-                Thread.Sleep(2000);
-            }
+            //     Console.WriteLine(
+            //         $"Remaining Token: {enchantmentToken - i - 1}\n");
+            //     Thread.Sleep(2000);
+            // }
 
 
 

@@ -1,0 +1,15 @@
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.sourcelink.json
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/bin/Debug/net9.0/0109_Ship
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/bin/Debug/net9.0/0109_Ship.deps.json
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/bin/Debug/net9.0/0109_Ship.runtimeconfig.json
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/bin/Debug/net9.0/0109_Ship.dll
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/bin/Debug/net9.0/0109_Ship.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.dll
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/refint/0109_Ship.dll
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/0109_Ship.genruntimeconfig.cache
+/Users/benchoi/Documents/GitHub/Lion7/0109_Ship/obj/Debug/net9.0/ref/0109_Ship.dll
