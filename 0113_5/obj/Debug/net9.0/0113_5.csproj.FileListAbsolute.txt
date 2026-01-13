@@ -1,0 +1,15 @@
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/bin/Debug/net9.0/0113_5
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/bin/Debug/net9.0/0113_5.deps.json
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/bin/Debug/net9.0/0113_5.runtimeconfig.json
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/bin/Debug/net9.0/0113_5.dll
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/bin/Debug/net9.0/0113_5.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.sourcelink.json
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.dll
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/refint/0113_5.dll
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/0113_5.genruntimeconfig.cache
+/Users/benchoi/Documents/GitHub/Lion7/0113_5/obj/Debug/net9.0/ref/0113_5.dll
