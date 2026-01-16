@@ -1,0 +1,5 @@
+/Users/benchoi/Documents/GitHub/Lion7/0115_3/obj/Debug/net9.0/0115_3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/0115_3/obj/Debug/net9.0/0115_3.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0115_3/obj/Debug/net9.0/0115_3.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/0115_3/obj/Debug/net9.0/0115_3.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0115_3/obj/Debug/net9.0/0115_3.sourcelink.json

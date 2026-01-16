@@ -1,0 +1,15 @@
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/bin/Debug/net9.0/0115_TextRPG
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/bin/Debug/net9.0/0115_TextRPG.deps.json
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/bin/Debug/net9.0/0115_TextRPG.runtimeconfig.json
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/bin/Debug/net9.0/0115_TextRPG.dll
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/bin/Debug/net9.0/0115_TextRPG.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.sourcelink.json
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.dll
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/refint/0115_TextRPG.dll
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.pdb
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/0115_TextRPG.genruntimeconfig.cache
+/Users/benchoi/Documents/GitHub/Lion7/0115_TextRPG/obj/Debug/net9.0/ref/0115_TextRPG.dll
