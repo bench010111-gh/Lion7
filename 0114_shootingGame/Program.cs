@@ -296,7 +296,7 @@ namespace 슈팅게임만들기
             Console.SetCursorPosition(63, 1);
             Console.Write("┃              ┃");
             Console.SetCursorPosition(65, 1);
-            Console.Write("Score : " + Score);
+            Console.Write("Score : " + Score+ 100000);
             Console.SetCursorPosition(63, 2);
             Console.Write("┗━━━━━━━━━━━━━━┛");
         }

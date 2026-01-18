@@ -1,0 +1,15 @@
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.AssemblyInfoInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.AssemblyInfo.cs
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.csproj.CoreCompileInputs.cache
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.sourcelink.json
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/bin/Debug/net9.0/ConsoleGame
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/bin/Debug/net9.0/ConsoleGame.deps.json
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/bin/Debug/net9.0/ConsoleGame.runtimeconfig.json
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/bin/Debug/net9.0/ConsoleGame.dll
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/bin/Debug/net9.0/ConsoleGame.pdb
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.dll
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/refint/ConsoleGame.dll
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.pdb
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ConsoleGame.genruntimeconfig.cache
+/Users/benchoi/Documents/GitHub/Lion7/ConsoleGame/obj/Debug/net9.0/ref/ConsoleGame.dll
