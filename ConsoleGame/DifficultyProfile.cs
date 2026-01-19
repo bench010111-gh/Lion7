@@ -4,10 +4,10 @@ namespace FishTyper
     {
         // Quota
         private const int BaseQuota = 10;
-        private const int QuotaGrowth = 5; // 매일 +2 (원하면 +1로 줄이세요)
+        private const int QuotaGrowth = 5;
 
         // Word length
-        private const int BaseMaxLen = 5;   // Day1에서 최대 5
+        private const int BaseMaxLen = 5;
         private const int MinLen = 3;
 
         // Speed (글자 길이/Day에 따라 자연스럽게 올라가도록)

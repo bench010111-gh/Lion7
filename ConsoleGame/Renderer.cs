@@ -51,7 +51,6 @@ namespace FishTyper
         {
             Clear();
 
-            // THIS
             int inputY = _h - 1;
             int bottomBorderY = inputY - 1; // border sits above input line
             DrawBorderNoTop(bottomBorderY);
@@ -110,7 +109,6 @@ namespace FishTyper
             }
         }
 
-        // THIS
         private void WriteText(int x, int y, string text)
         {
             if (y < 0 || y >= _h) return;
@@ -129,7 +127,6 @@ namespace FishTyper
             }
         }
 
-        // THIS
         private void DrawWordClipped(int x, int y, string word)
         {
             if (y < 0 || y >= _h) return;
@@ -151,7 +148,6 @@ namespace FishTyper
 
         private ConsoleColor GetDayColor(int day)
         {
-            // 보기 좋은 색들만 순환 (Black은 글자 안 보일 수 있어 제외)
             ConsoleColor[] palette =
             {
                 ConsoleColor.Cyan,
