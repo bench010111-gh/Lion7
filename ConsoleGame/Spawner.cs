@@ -38,7 +38,7 @@ namespace FishTyper
 
         private void SpawnOne(int lane, World world, DifficultyProfile diff, Fish?[] laneFish)
         {
-            int y = Game.HudHeight + lane; // 5~24
+            int y = Game.FishTopY + lane; // 5~24
 
             // 레인 인덱스 짝수: L->R, 홀수: R->L (교차 방지)
             Direction dir = (lane % 2 == 0) ? Direction.LeftToRight : Direction.RightToLeft;

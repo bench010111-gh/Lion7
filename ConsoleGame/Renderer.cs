@@ -13,6 +13,28 @@ namespace FishTyper
         private readonly char[][] _buffer;
         private readonly StringBuilder _sb = new StringBuilder();
 
+        private static readonly string[] PlayerIdle =
+        {
+        @"                   ",
+        @"   ○          ○  /)",
+        @"  ( \\        |\/.|",
+        @"   ㄱㄱ      / \  ¿"
+        };
+
+        private static readonly string[] PlayerCaught =
+        {
+        @"             ◀▶◀",
+        @"   ○         \○/",
+        @"  ( \\        |",
+        @"   ㄱㄱ      / \"
+        };
+
+        private void DrawAscii(int x, int y, string[] art)
+        {
+            for (int i = 0; i < art.Length; i++)
+                WriteText(x, y + i, art[i]);
+        }
+
         public Renderer(int width, int height, int hudHeight, int laneCount)
         {
             _w = width;
@@ -29,12 +51,15 @@ namespace FishTyper
         {
             Clear();
 
-            string title = "==============================  FISH TYPER  ==============================";
+            string title = "=================================  FISH TYPER  =================================";
             WriteText(0, 0, title);
 
             WriteText(0, 1, $"DAY {world.Day}   TIME LEFT {world.GetTimeLeftSeconds(),2}s");
             WriteText(0, 2, $"FISH CAUGHT {world.CaughtToday} / {world.Quota} QUOTA");
             WriteText(0, 3, new string('-', _w));
+
+            var art = splash.IsActive ? PlayerCaught : PlayerIdle;
+            DrawAscii(2, Game.FishermanY, art);
 
             // Fish lanes: y = hudHeight .. (hudHeight + laneCount - 1)
             // 입력줄(y=24)은 laneCount에 포함되지 않아서 자연히 제외됩니다.
@@ -43,7 +68,7 @@ namespace FishTyper
                 var f = laneFish[lane];
                 if (f is null) continue;
 
-                int y = _hudH + lane;
+                int y = Game.FishTopY + lane;
                 int x = (int)MathF.Round(f.X);
                 DrawWordClipped(x, y, f.Word);
             }
@@ -97,11 +122,14 @@ namespace FishTyper
             if (y < 0 || y >= _h) return;
 
             var line = _buffer[y];
+
             for (int i = 0; i < word.Length; i++)
             {
                 int px = x + i;
+
                 if (px < 0) continue;
                 if (px >= _w) break;
+
                 line[px] = word[i];
             }
         }
@@ -116,7 +144,10 @@ namespace FishTyper
                 ConsoleColor.Yellow,
                 ConsoleColor.Magenta,
                 ConsoleColor.Blue,
-                ConsoleColor.White
+                ConsoleColor.DarkRed,
+                ConsoleColor.White,
+                ConsoleColor.DarkYellow,
+                ConsoleColor.DarkGray
             };
 
             return palette[(day - 1) % palette.Length];

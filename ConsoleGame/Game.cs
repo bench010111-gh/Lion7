@@ -8,12 +8,19 @@ namespace FishTyper
         public const int Width = 80;
         public const int Height = 25;
 
-        // HUD: 0~4 (5줄)
         public const int HudHeight = 5;
+        public const int InputY = Height - 1;
 
-        // 입력줄(맨 마지막 y=24)은 제외해야 하므로:
-        // 물고기 레인: y=5~23 => 19줄
-        public const int LaneCount = Height - HudHeight - 1; // 25-5-1=19
+        // fisherman placement
+        public const int FishermanY = HudHeight + 1;
+        public const int FishermanHeight = 4; // PlayerIdle.Length (keep in sync)
+
+        // fish area: start under fisherman, end above input
+        public const int FishTopY = FishermanY + FishermanHeight;   // row right under the art
+        public const int FishBottomY = InputY - 1;
+
+        // lane count = number of usable rows for fish
+        public const int LaneCount = FishBottomY - FishTopY + 1;
 
         private readonly World _world = new World();
         private readonly DifficultyProfile _diff = new DifficultyProfile();
@@ -36,23 +43,48 @@ namespace FishTyper
 
         public void Run()
         {
-            // TrySetConsoleSize(Width, Height);
+            //TrySetConsoleSize(Width, Height);
             Console.CursorVisible = false;
 
-            var sw = Stopwatch.StartNew();
+            const int targetFps = 20;
+            const double targetFrameSec = 1.0 / targetFps;
+
+            var clock = Stopwatch.StartNew();
+            double last = clock.Elapsed.TotalSeconds;
+            double accumulator = 0;
 
             while (_running)
             {
-                double dt = sw.Elapsed.TotalSeconds;
-                sw.Restart();
+                double now = clock.Elapsed.TotalSeconds;
+                double dt = now - last;
+                last = now;
 
-                Tick(dt);
+                // ✅ 탭 전환/렉 등으로 dt 폭주 방지
+                if (dt > 0.25) dt = 0.25;
+
+                accumulator += dt;
+
+                // ✅ 고정 프레임: targetFrameSec만큼 쌓였을 때만 Tick 실행
+                if (accumulator >= targetFrameSec)
+                {
+                    // accumulator가 너무 쌓였으면 한 번만 처리(spiral 방지)
+                    accumulator = 0;
+
+                    Tick(targetFrameSec);
+                }
+                else
+                {
+                    // 남은 시간만큼 쉬어 CPU 과열/출력 폭주 방지
+                    int sleepMs = (int)((targetFrameSec - accumulator) * 1000);
+                    if (sleepMs > 0) Thread.Sleep(sleepMs);
+                }
             }
 
             Console.CursorVisible = true;
             Console.ResetColor();
             Console.Clear();
         }
+
 
         private void Tick(double dt)
         {
