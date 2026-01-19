@@ -10,6 +10,7 @@ namespace FishTyper
 
         public const int HudHeight = 5;
         public const int InputY = Height - 1;
+        public const int BottomBorderY = InputY - 1;
 
         // fisherman placement
         public const int FishermanY = HudHeight + 1;
@@ -17,7 +18,7 @@ namespace FishTyper
 
         // fish area: start under fisherman, end above input
         public const int FishTopY = FishermanY + FishermanHeight;   // row right under the art
-        public const int FishBottomY = InputY - 1;
+        public const int FishBottomY = BottomBorderY - 1;
 
         // lane count = number of usable rows for fish
         public const int LaneCount = FishBottomY - FishTopY + 1;

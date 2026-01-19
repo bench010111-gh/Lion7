@@ -18,7 +18,7 @@ namespace FishTyper
         @"                   ",
         @"   ○          ○  /)",
         @"  ( \\        |\/.|",
-        @"   ㄱㄱ      / \  ¿"
+        @"   77        / \  ¿"
         };
 
         private static readonly string[] PlayerCaught =
@@ -26,7 +26,7 @@ namespace FishTyper
         @"             ◀▶◀",
         @"   ○         \○/",
         @"  ( \\        |",
-        @"   ㄱㄱ      / \"
+        @"   77        / \"
         };
 
         private void DrawAscii(int x, int y, string[] art)
@@ -51,12 +51,18 @@ namespace FishTyper
         {
             Clear();
 
-            string title = "=================================  FISH TYPER  =================================";
-            WriteText(0, 0, title);
+            // THIS
+            int inputY = _h - 1;
+            int bottomBorderY = inputY - 1; // border sits above input line
+            DrawBorderNoTop(bottomBorderY);
 
-            WriteText(0, 1, $"DAY {world.Day}   TIME LEFT {world.GetTimeLeftSeconds(),2}s");
-            WriteText(0, 2, $"FISH CAUGHT {world.CaughtToday} / {world.Quota} QUOTA");
-            WriteText(0, 3, new string('-', _w));
+            string title = "===============================  FISH TYPER  ===================================";
+
+            WriteText(2, 0, title);
+            WriteText(2, 1, $"DAY {world.Day}   TIME LEFT {world.GetTimeLeftSeconds(),2}s");
+            WriteText(2, 2, $"FISH CAUGHT {world.CaughtToday} / {world.Quota} QUOTA");
+            WriteText(1, 3, new string('-', _w - 2)); // inside width
+
 
             var art = splash.IsActive ? PlayerCaught : PlayerIdle;
             DrawAscii(2, Game.FishermanY, art);
@@ -78,7 +84,7 @@ namespace FishTyper
 
             // ✅ 입력 줄: 맨 마지막 줄(y = height - 1)
             string prompt = $"> {input.Current}";
-            WriteText(0, _h - 1, prompt);
+            WriteText(2, _h - 1, $"> {input.Current}");
 
             Console.SetCursorPosition(0, 0);
             Console.ForegroundColor = GetDayColor(world.Day);
@@ -104,35 +110,44 @@ namespace FishTyper
             }
         }
 
+        // THIS
         private void WriteText(int x, int y, string text)
         {
             if (y < 0 || y >= _h) return;
 
-            var line = _buffer[y];
+            // Don't write into border columns
+            int minX = 1;
+            int maxX = _w - 2;
+
+            int px = x;
             for (int i = 0; i < text.Length; i++)
             {
-                int px = x + i;
-                if (px < 0 || px >= _w) break;
-                line[px] = text[i];
+                if (px > maxX) break;
+                if (px >= minX)
+                    _buffer[y][px] = text[i];
+                px++;
             }
         }
 
+        // THIS
         private void DrawWordClipped(int x, int y, string word)
         {
             if (y < 0 || y >= _h) return;
+
+            int minX = 1;
+            int maxX = _w - 2;
 
             var line = _buffer[y];
 
             for (int i = 0; i < word.Length; i++)
             {
                 int px = x + i;
-
-                if (px < 0) continue;
-                if (px >= _w) break;
-
+                if (px < minX) continue;
+                if (px > maxX) break;
                 line[px] = word[i];
             }
         }
+
 
         private ConsoleColor GetDayColor(int day)
         {
@@ -152,5 +167,22 @@ namespace FishTyper
 
             return palette[(day - 1) % palette.Length];
         }
+
+        private void DrawBorderNoTop(int bottomBorderY)
+        {
+            // Sides (no top border)
+            for (int y = 1; y <= bottomBorderY; y++)
+            {
+                _buffer[y][0] = '║';
+                _buffer[y][_w - 1] = '║';
+            }
+
+            // Bottom border
+            _buffer[bottomBorderY][0] = '╚';
+            for (int x = 1; x < _w - 1; x++)
+                _buffer[bottomBorderY][x] = '═';
+            _buffer[bottomBorderY][_w - 1] = '╝';
+        }
+
     }
 }
